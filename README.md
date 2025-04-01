@@ -1,38 +1,29 @@
 # Resume Screening App using Machine Learning and NLP
 
-## 📌 Project Description
-The Resume Screening App is an AI-powered application designed to **automatically analyze and filter resumes** based on predefined criteria like skills, experience, education, etc. It helps recruiters quickly identify the most suitable candidates for a job by leveraging techniques from Natural Language Processing (NLP) and Machine Learning.
+## Description 📜
+The Resume Screening App is an application that classifies resumes into predefined categories (e.g., Data Science, HR, Data Engineer) based on their content. It uses Machine Learning (SVM) and Natural Language Processing (NLP) techniques for text classification. The app allows users to upload a resume in .pdf or .txt format and receive a predicted category for the resume. 📂✨
 
 ---
 
-## ✅ Features
-- Extracts text from resumes (PDF, DOCX).
-- Cleans and preprocesses text data.
-- Extracts key information such as skills, experience, and education.
-- Uses NLP models for keyword matching and semantic understanding.
-- Classifies resumes as "Suitable" or "Not Suitable" based on requirements.
-- Provides a simple user interface for uploading resumes and displaying results.
-- Can be expanded with advanced features like Named Entity Recognition (NER).
+## Features 🔥
+-Upload resumes in PDF or TXT format. 📥
+-Text extraction from PDF files. 📄➡️📝
+-Preprocessing of resume text (cleaning and tokenization). 🧹🧠
+-Prediction of the resume's category using a pre-trained SVM model. 🤖
+-Display the predicted category. 🏷️
 
+## Technologies Used ⚙️
+Python 🐍: Programming language.
+
+Streamlit 🌐: Web app framework.
+
+PyMuPDF (fitz) 📚: PDF text extraction.
+
+Scikit-learn 📊: For training and prediction with SVM.
 ---
-
-## 📂 Project Structure
 ```
-├── README.md
-├── app.py                 # Main application file (if using Flask/Streamlit)
-├── requirements.txt       # Dependencies
-├── data/                  # Folder for storing resumes (PDFs, DOCX)
-├── models/                # Trained models
-├── utils/                 # Helper functions (text extraction, preprocessing, etc.)
-├── static/                # CSS/JS files (if using Flask)
-├── templates/             # HTML files (if using Flask)
-└── notebooks/             # Jupyter notebooks for experimentation
 ```
-
----
-
 ## 📦 Dependencies
-```
 pandas
 numpy
 spacy
@@ -51,7 +42,7 @@ flask (if using Flask for UI)
 ## 🚀 Installation
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/resume-screening-app.git
+git clone https://github.com/yourusername/resume-screening-app.git
 ```
 
 2. Install dependencies:
@@ -59,23 +50,16 @@ git clone https://github.com/your-username/resume-screening-app.git
 pip install -r requirements.txt
 ```
 
-3. Download pre-trained models (if needed, e.g., Spacy models):
-```
-python -m spacy download en_core_web_sm
-```
-
 ---
 
-## 📊 Usage
-1. Add resumes to the `data/` folder.
-2. Run the application:
+
 ```
 python app.py
 ```
 3. Upload resumes via the UI and view the screening results.
 
 ---
-
+```
 ## 📈 Future Enhancements
 - Add Named Entity Recognition (NER) for better skill extraction.
 - Integrate with cloud-based storage.
@@ -84,6 +68,19 @@ python app.py
 
 ---
 
+## How to Use 📚
+Open the app in your browser (Streamlit should automatically open a browser window).
+
+Upload your resume in .pdf or .txt format.
+
+The app will process your resume and predict its category (e.g., Data Science, HR, Data Engineer).
+
+View the predicted category displayed on the screen. 🧐
+```
+```
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+```
+
 
